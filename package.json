@@ -7,7 +7,8 @@
 	"author": "Sean Wilson",
 	"license": "MIT",
 	"private": false,
-	"files": ["types/*"],
+	"keywords": ["vue", "async", "computed", "decorator", "typescript"],
+	"files": ["build", "types"],
 	"scripts": {
 		"clean": "rimraf ./build ./types",
 		"copy:defs": "ncp ./src ./types --filter='src(/.*\\.d\\.ts)?$'",
@@ -22,7 +23,7 @@
 		"vue": "^2.6.10"
 	},
 	"peerDependencies": {
-		"vue": "^2.6.10"
+		"vue": "~2"
 	},
 	"dependencies": {
 		"vue-async-computed": "^3.7.0",
