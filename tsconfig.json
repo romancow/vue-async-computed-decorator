@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"declarationDir": "./types",
+		"experimentalDecorators": false,
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"outDir": "./build",
+		"removeComments": true,
+		"sourceMap": false,
+		"strict": true,
+		"strictNullChecks": true,
+		"target": "es5"
+	},
+	"include": ["src/**/*"]
+}
