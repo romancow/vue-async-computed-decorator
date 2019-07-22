@@ -23,14 +23,11 @@
 		"index.d.ts"
 	],
 	"scripts": {
-		"clean": "rimraf ./build ./types",
-		"copy:defs": "ncp ./src ./types --filter='src(/.*\\.d\\.ts)?$'",
-		"build:ts": "tsc -p .",
-		"prepare": "npm run build:ts && npm run copy:defs",
-		"build": "npm run clean && npm run prepare"
+		"clean": "rimraf ./index.js ./index.d.ts",
+		"build": "tsc -p .",
+		"prepare": "npm run build"
 	},
 	"devDependencies": {
-		"ncp": "^2.0.0",
 		"rimraf": "^2.6.3",
 		"typescript": "^3.5.3",
 		"vue": "^2.6.10"
