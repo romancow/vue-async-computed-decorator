@@ -8,11 +8,20 @@
 	"author": "Sean Wilson",
 	"license": "MIT",
 	"private": false,
-	"keywords": ["vue", "async", "computed", "decorator", "typescript"],
+	"keywords": [
+		"vue",
+		"async",
+		"computed",
+		"decorator",
+		"typescript"
+	],
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/"
 	},
-	"files": ["build", "types"],
+	"files": [
+		"build",
+		"types"
+	],
 	"scripts": {
 		"clean": "rimraf ./build ./types",
 		"copy:defs": "ncp ./src ./types --filter='src(/.*\\.d\\.ts)?$'",
@@ -30,6 +39,7 @@
 		"vue": "~2"
 	},
 	"dependencies": {
+		"@types/vue-async-computed": "./packages/@types/vue-async-computed",
 		"vue-async-computed": "^3.7.0",
 		"vue-class-component": "^7.1.0"
 	}

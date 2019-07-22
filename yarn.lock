@@ -2,6 +2,9 @@
 # yarn lockfile v1
 
 
+"@types/vue-async-computed@./packages/@types/vue-async-computed":
+  version "1.0.0"
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
