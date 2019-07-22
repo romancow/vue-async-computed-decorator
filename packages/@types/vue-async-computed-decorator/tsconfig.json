@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"target": "es5",
+		"types": ["vue"]
+	},
+	"include": ["**/*.ts"]
+}

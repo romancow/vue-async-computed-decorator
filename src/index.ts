@@ -1,8 +1,6 @@
 import { createDecorator } from 'vue-class-component'
 import AsyncComputedPlugin, { AsyncComputedOption, AsyncComputedPluginOptions } from 'vue-async-computed'
 import Vue, { PluginObject } from 'vue'
-import './vue'
-import './vue-async-computed'
 
 export type AsyncComputedOptions<T> = {
 	default?: (() => T) | T,

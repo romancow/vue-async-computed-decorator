@@ -1,0 +1,1 @@
+This is an internal @types package dependency for the `vue-async-computed` type extensions
