@@ -2,8 +2,8 @@
 	"name": "@romancow/vue-async-computed-decorator",
 	"version": "1.0.0",
 	"description": "Decorator and typescript support for the `vue-async-computed` module",
-	"main": "build/index.js",
-	"types": "types/index.d.ts",
+	"main": "index.js",
+	"types": "index.d.ts",
 	"repository": "git://github.com/romancow/vue-async-computed-decorator.git",
 	"author": "Sean Wilson",
 	"license": "MIT",
@@ -19,8 +19,8 @@
 		"registry": "https://npm.pkg.github.com/"
 	},
 	"files": [
-		"build",
-		"types"
+		"index.js",
+		"index.d.ts"
 	],
 	"scripts": {
 		"clean": "rimraf ./build ./types",
