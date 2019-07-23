@@ -4,9 +4,15 @@
 	"description": "TypeScript definitions for vue-async-computed",
 	"main": "",
 	"types": "index.d.ts",
-	"repository": "git://github.com/romancow/vue-async-computed-decorator.git",
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com/romancow/vue-async-computed-decorator.git"
+	},
 	"author": "Sean Wilson",
 	"license": "MIT",
 	"private": true,
-	"keywords": ["vue", "async", "computed", "decorator", "typescript"]
+	"keywords": ["vue", "async", "computed", "decorator", "typescript"],
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
