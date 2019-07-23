@@ -10,7 +10,6 @@
 	},
 	"author": "Sean Wilson",
 	"license": "MIT",
-	"private": true,
 	"keywords": ["vue", "async", "computed", "decorator", "typescript"],
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/"
