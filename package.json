@@ -1,6 +1,6 @@
 {
 	"name": "@romancow/vue-async-computed-decorator",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Decorator and typescript support for the `vue-async-computed` module",
 	"main": "index.js",
 	"types": "index.d.ts",
