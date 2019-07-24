@@ -1,6 +1,6 @@
 import { createDecorator } from 'vue-class-component'
-import AsyncComputedPlugin, { AsyncComputedOption, AsyncComputedPluginOptions } from '@romancow/vue-async-computed'
-import Vue, { PluginObject } from 'vue'
+import AsyncComputedPlugin, { AsyncComputedOption } from '@romancow/vue-async-computed'
+import Vue from 'vue'
 
 export type AsyncComputedOptions<T> = {
 	default?: (() => T) | T,
@@ -9,10 +9,8 @@ export type AsyncComputedOptions<T> = {
 	lazy?: boolean
 }
 
-type AsyncComputedDecorator = (<T>(options?: AsyncComputedOptions<T>) => MethodDecorator) & PluginObject<AsyncComputedPluginOptions>
-
 const AsyncComputed = function <T = any>(options?: AsyncComputedOptions<T>) {
-	return (target: Vue, propertyKey: string , descriptor: TypedPropertyDescriptor<Promise<T>>) => {
+	return <V extends Vue, K extends keyof V & string, P extends V[K] & Promise<T>>(target: V, propertyKey: K , descriptor: TypedPropertyDescriptor<P>) => {
 		createDecorator((vueOpts, prop: string) => {
 			const { asyncComputed = {}, computed: { [prop]: opt, ...computed } = {}} = vueOpts
 			asyncComputed[prop] = {
@@ -23,7 +21,7 @@ const AsyncComputed = function <T = any>(options?: AsyncComputedOptions<T>) {
 			vueOpts.asyncComputed = asyncComputed
 		})(target, propertyKey)
 	}
-} as AsyncComputedDecorator
+}
 
 AsyncComputed.install = AsyncComputedPlugin.install
 
