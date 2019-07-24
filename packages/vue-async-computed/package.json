@@ -14,5 +14,8 @@
 	"files": ["*.js", "*.d.ts"],
 	"dependencies": {
 		"vue-async-computed": "^3.7.0"
+	},
+	"peerDependencies": {
+		"vue": "~2"
 	}
 }

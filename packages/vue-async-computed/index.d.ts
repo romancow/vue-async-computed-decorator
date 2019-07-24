@@ -1,4 +1,4 @@
 import './vue';
 import './vue-async-computed';
-import AsyncComputed from 'vue-async-computed';
-export default AsyncComputed;
+export * from 'vue-async-computed';
+export { default as default } from 'vue-async-computed';
