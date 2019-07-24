@@ -25,6 +25,7 @@
 	"scripts": {
 		"clean": "rimraf ./index.js ./index.d.ts",
 		"build": "tsc -p .",
+		"build:defs": "tsc -p ./packages/vue-async-computed",
 		"prepare": "npm run build"
 	},
 	"devDependencies": {

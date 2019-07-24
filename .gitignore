@@ -64,8 +64,8 @@ tmp
 /build
 /dist
 /types
-index.js
-index.d.ts
+/index.js
+/index.d.ts
 
 # nvm
 .nvmrc
