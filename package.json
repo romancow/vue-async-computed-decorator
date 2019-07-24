@@ -37,8 +37,7 @@
 		"vue": "~2"
 	},
 	"dependencies": {
-		"@romancow/vue-async-computed": "^1.0.0",
-		"vue-async-computed": "^3.7.0",
+		"@romancow/vue-async-computed": "^1.1.0",
 		"vue-class-component": "^7.1.0"
 	}
 }

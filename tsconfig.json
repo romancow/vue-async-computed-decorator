@@ -1,17 +1,5 @@
 {
-	"compilerOptions": {
-		"declaration": true,
-		"experimentalDecorators": false,
-		"module": "commonjs",
-		"noImplicitAny": true,
-		"noImplicitReturns": true,
-		"noImplicitThis": true,
-		"noUnusedLocals": true,
-		"removeComments": true,
-		"sourceMap": false,
-		"strict": true,
-		"strictNullChecks": true,
-		"target": "es5"
-	},
+	"extends": "./packages/vue-async-computed/tsconfig",
+	"include": [],
 	"files": ["index.ts"]
 }
