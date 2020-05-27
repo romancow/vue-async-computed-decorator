@@ -22,7 +22,7 @@ More info on using the GitHub npm package registry [here](https://help.github.co
 Install the `vue-async-computed` Vue plugin:
 ```javascript
 import Vue from 'vue'
-import AsyncComputed from 'vue-async-computed-decorator'
+import AsyncComputed from '@romancow/vue-async-computed-decorator'
 
 Vue.use(AsyncComputed)
 ```
@@ -34,7 +34,7 @@ You can just use the package for it's type definitions and use the plugin as out
 Or use it along with [`vue-class-component`](https://github.com/vuejs/vue-class-component) as a typescript decorator on a `get` accessor that returns a `Promise`. Corresponding `set` accessors are not supported and will be ignored.
 ```typescript
 import Vue from 'vue'
-import AsyncComputed from 'vue-async-computed-decorator'
+import AsyncComputed from '@romancow/vue-async-computed-decorator'
 
 @Component
 export class MyComponent extends Vue {
@@ -52,7 +52,7 @@ export class MyComponent extends Vue {
 You can also pass `default`, `watch`, `shouldUpdate`, and `lazy` options (see [`vue-async-computed`](https://github.com/foxbenjaminfox/vue-async-computed#usage-example) for more details on these):
 ```typescript
 import Vue from 'vue'
-import AsyncComputed from 'vue-async-computed-decorator'
+import AsyncComputed from '@romancow/vue-async-computed-decorator'
 
 @Component
 export class MyComponent extends Vue {
