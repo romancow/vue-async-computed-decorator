@@ -25,7 +25,6 @@
 	"scripts": {
 		"clean": "rimraf ./index.js ./index.d.ts",
 		"build": "tsc -p .",
-		"build:defs": "tsc -p ./packages/vue-async-computed",
 		"prepare": "npm run build"
 	},
 	"devDependencies": {
@@ -37,7 +36,7 @@
 		"vue": "~2"
 	},
 	"dependencies": {
-		"@romancow/vue-async-computed": "^1.1.0",
+		"vue-async-computed": "^3.9.0",
 		"vue-class-component": "^7.1.0"
 	}
 }

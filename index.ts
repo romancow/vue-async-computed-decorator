@@ -1,5 +1,5 @@
 import { createDecorator } from 'vue-class-component'
-import AsyncComputedPlugin, { AsyncComputedOption } from '@romancow/vue-async-computed'
+import AsyncComputedPlugin, { IAsyncComputedValue } from 'vue-async-computed'
 import Vue from 'vue'
 
 export type AsyncComputedOptions<T> = {
@@ -16,7 +16,7 @@ const AsyncComputed = function <T = any>(options?: AsyncComputedOptions<T>) {
 			asyncComputed[prop] = {
 				get: (opt instanceof Function) ? opt : opt.get,
 				...options
-			} as AsyncComputedOption
+			} as IAsyncComputedValue<T>
 			vueOpts.computed = computed
 			vueOpts.asyncComputed = asyncComputed
 		})(target, propertyKey)
@@ -25,5 +25,5 @@ const AsyncComputed = function <T = any>(options?: AsyncComputedOptions<T>) {
 
 AsyncComputed.install = AsyncComputedPlugin.install
 
-export * from '@romancow/vue-async-computed'
+export * from 'vue-async-computed'
 export default AsyncComputed
