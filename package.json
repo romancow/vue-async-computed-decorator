@@ -30,7 +30,7 @@
 	"devDependencies": {
 		"rimraf": "^3.0.2",
 		"typescript": "^3.9.7",
-		"vue": "^2.6.10"
+		"vue": "^3.0.0"
 	},
 	"peerDependencies": {
 		"vue": "~2"
